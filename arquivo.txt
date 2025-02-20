@@ -1,0 +1,52 @@
+// C++ code
+//
+/*
+  This program blinks pin 13 of the Arduino (the
+  built-in LED)
+*/
+
+#define LED_AMARELO 12
+#define LED_VERDE 11
+#define LED_VERMELHO 13
+
+#define LED_AMARELO2 2
+#define LED_VERDE2 3
+#define LED_VERMELHO2 4
+
+
+void setup() 
+{
+  // Configura os pinos como saída
+  pinMode(LED_AMARELO, OUTPUT);
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(LED_VERMELHO, OUTPUT);
+  pinMode(LED_VERMELHO2,OUTPUT);
+  pinMode(LED_VERDE2, OUTPUT);
+}
+
+void loop()
+ {
+
+
+ // Luz verde
+  digitalWrite(LED_VERDE, HIGH);
+  digitalWrite(LED_VERMELHO2, HIGH);
+  delay(3000);
+  digitalWrite(LED_VERDE, LOW);
+ 
+
+  // Luz amarela
+  digitalWrite(LED_AMARELO, HIGH); // Aciona o pino 11
+  delay(3000); // Aguarda 3 segundos
+  digitalWrite(LED_AMARELO, LOW); // Desativa o pino 11
+  digitalWrite(LED_VERMELHO2, LOW);
+  
+
+
+
+ // Luz vermelha
+  digitalWrite(LED_VERMELHO, HIGH);
+  delay(5000);
+  digitalWrite(LED_VERMELHO, LOW);
+  digitalWrite (LED_VERDE2, HIGH);
+ 

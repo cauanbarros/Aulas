@@ -1,0 +1,29 @@
+primeiro semaforo
+
+ligar a luz verde
+ficar acesa 3 segundos
+apagar a luz verde 
+
+ligar a luz amarela
+ficar acesa 2 segundos
+apagar a luz amarela
+
+ ligar a luz vermelha
+ficar acesa 5 segundos
+apagar a luz vermelha 
+
+
+
+dois semáforos em funcionamento
+
+ligar a luz verde 
+ficar acesa 3 segundos
+apagar a luz verde 
+
+ligar a luz amarela
+ficar acesa 2 segundos
+apagar a luz amarela
+
+ ligar a luz vermelha
+ficar acesa 5 segundos
+apagar a luz vermelha 
