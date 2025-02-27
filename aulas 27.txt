@@ -1,0 +1,205 @@
+int temperatura =30;
+
+
+
+
+void setup ()
+
+{
+Serial.begin (9600);
+
+if (temperatura >=30)
+{
+digitalWrite (13, HIGH);
+}
+}
+  
+void loop ()
+{}
+  
+
+
+
+// C++ code
+//
+
+int bateria = 40;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+
+  if (bateria >= 20 && bateria <= 80) {
+    digitalWrite(13, HIGH);
+    Serial.println("Bateria entre 20 e 80");
+  } 
+  else if (bateria < 20) {
+    digitalWrite(13, LOW);
+    Serial.println("Bateria Fraca");
+  }
+}
+
+void loop() {
+ 
+}
+
+
+
+
+int valor = 800;
+
+void setup() {
+  Serial.begin(9600);
+
+  // Mapeia o valor de 0 a 1023 para o intervalo de 0 a 100
+  int valorMap = map(valor, 0, 1023, 0, 100);
+  Serial.println(valorMap);
+
+  // Restringe o valor para o intervalo entre 20 e 80
+  int valorConstrain = constrain(valorMap, 20, 80);
+  Serial.println(valorConstrain);
+}
+
+void loop() {
+  // Nada a fazer no loop
+}
+
+
+
+
+
+int numero = 2;
+int resto = numero % 2; // Corrigido o uso do operador %
+
+void setup() {
+  Serial.begin(9600);
+
+  if (resto == 0) {
+    Serial.println("Numero par");
+  } else {
+    Serial.println("Numero ímpar");
+  }
+}
+
+void loop() {
+  // Código vazio no loop
+}
+
+
+
+
+
+
+// C++ code
+//
+
+/*
+int numero = 0;
+
+void setup () {
+  Serial.begin (9600);
+
+    if (numero > 0) {
+Serial.println ("Numero positivo");
+}   
+  else if (numero < 0) {
+Serial.println ("Numero negativo");
+
+ }
+     else if (numero == 0) {
+Serial.println ("O numero eh 0");
+
+
+ }
+}
+  
+void loop () {  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String nome = "Manuel Carlos";
+String cargo = "Pedreiro";
+float salario = 1999;
+float reajuste = 0;
+
+void setup () {
+Serial.begin (9600);
+
+Serial.println ("Manuel Carlos");
+  Serial.println ("Pedreiro");
+
+reajuste = salario + ( salario * 0.10);  
+  if (salario < 1000 ){
+    
+    Serial.println ("Salario reajustado");
+    4Serial.println (reajuste);
+  }
+
+  else if (salario > 1000 ) {
+   Serial.println ("Salario maior que 1000");
+  }
+  
+  
+  
+  
+}
+  void loop ()
+  {}  
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
